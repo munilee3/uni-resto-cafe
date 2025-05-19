@@ -1,3 +1,62 @@
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.dish-info {
+  max-width: 70%;
+}
+
+.dish-img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.calories {
+  color: orange;
+}
+
+.custom {
+  color: blue;
+}
+
+.not-available {
+  color: red;
+}
+
+.quantity {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dish-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  align-self: flex-start;
+}
+
+.currency-price {
+  display: flex;
+}
+
+.currency {
+  margin-right: 5px;
+}
+
 .dish-item-container {
   border: 1px solid gray;
   border-radius: 12px;

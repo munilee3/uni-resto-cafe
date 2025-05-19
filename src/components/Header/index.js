@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
 import './index.css'
 
-const Header = ({cartItems}) => {
+const Header = ({cartItems, restoDetails}) => {
+  const {restaurantName} = restoDetails[0]
   const getCartItemsCount = () =>
     cartItems.reduce((acc, item) => acc + item.quantity, 0)
 
@@ -25,8 +26,10 @@ const Header = ({cartItems}) => {
   )
 
   return (
-    <header className="nav-header">
-      <h1 className="m-0 logo-heading">UNI Resto Cafe</h1>
+    <header className="p-4 d-flex flex-row align-items-center nav-header">
+      <h1 className="m-0 logo-heading" key={restaurantName}>
+        {restaurantName}
+      </h1>
       <div className="d-flex flex-row align-items-center ms-auto">
         <p className="mt-0 mb-0 me-2 d-none d-sm-block my-orders-text">
           My Orders

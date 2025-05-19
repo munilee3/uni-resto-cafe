@@ -10,3 +10,86 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.tab-container {
+  list-style: none;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(219, 213, 213);
+}
+
+.each-tab-item {
+  font-family: 'roboto';
+  cursor: pointer;
+}
+.tab-btn {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 250px;
+}
+
+.active-tab-item {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-control button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+}
+
+.cart-icon {
+  font-size: 1.2rem;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
